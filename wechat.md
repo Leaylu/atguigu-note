@@ -1,6 +1,7 @@
 ---
 title: 微信交流群
 qr: true
+lastUpdated: false
 ---
 
 # 微信交流群
