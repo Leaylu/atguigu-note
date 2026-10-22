@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
-import { useRouter } from 'vitepress'
+import { useRouter, useData } from 'vitepress'
 import { NProgress } from 'nprogress-v2'
 import 'nprogress-v2/dist/index.css'
 import './style.css'
 import Giscus from './components/Giscus.vue'
+import WechatGroup from './components/WechatGroup.vue'
 
 NProgress.configure({ showSpinner: false })
 import { inBrowser } from 'vitepress'
@@ -33,11 +34,16 @@ if (inBrowser) {
 }
 
 const { Layout } = DefaultTheme
+
+// 站点关闭了 markdown 原始 HTML（见 config.mts），组件只能从主题注入；
+// wechat.md 用 frontmatter 的 qr: true 声明自己是二维码页
+const { frontmatter } = useData()
 </script>
 
 <template>
   <Layout>
     <template #doc-after>
+      <WechatGroup v-if="frontmatter.qr" />
       <Giscus />
     </template>
   </Layout>

@@ -17,14 +17,26 @@
   python notify.py              （在 Actions 中运行）
   python notify.py --selftest   本地逻辑自测
   python notify.py --dry-run    查看已配置平台和示例消息，不发真消息
+  python notify.py --qr-check   检查微信群二维码有效期（见 qr_check）
 """
 
+import datetime
 import json
 import os
 import sys
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
+
+CST = datetime.timezone(datetime.timedelta(hours=8))
+QR_CFG = Path(".vitepress/wechat-qr.json")
+
+
+def get(url):
+    req = urllib.request.Request(url)
+    with urllib.request.urlopen(req, timeout=15) as r:
+        return r.read().decode()
 
 
 def post(url, data, form=False):
@@ -184,6 +196,65 @@ def followers_notify():
         notify(f"👥 新粉丝 {u}", f"你新增了粉丝 {u}\nhttps://github.com/{u}")
 
 
+def qr_url():
+    """Gist raw 地址：优先用 Actions 变量，回退到进仓配置。"""
+    return os.environ.get("WECHAT_QR_URL") or json.loads(QR_CFG.read_text())["gistUrl"]
+
+
+def parse_qr(text):
+    """Gist 文本 → (邀请链接, 过期时间)。第 1 行链接，第 2 行可选 ISO 时间（无时区按 +08:00）。"""
+    lines = [
+        l.strip()
+        for l in text.splitlines()
+        if l.strip() and not l.strip().startswith("#")
+    ]
+    link = lines[0] if lines else ""
+    if not link.startswith("http"):
+        return None, None
+    when = None
+    if len(lines) > 1:
+        try:
+            when = datetime.datetime.fromisoformat(lines[1].replace(" ", "T"))
+            if when.tzinfo is None:
+                when = when.replace(tzinfo=CST)
+        except ValueError:
+            when = None
+    return link, when
+
+
+def qr_check():
+    """每日检查群二维码：临期或过期才推送，正常时静默。"""
+    try:
+        text = get(f"{qr_url()}?t={int(time.time())}")  # 打掉 Gist CDN 的 max-age=300
+    except Exception as e:
+        notify("🚫 群二维码读取失败", f"无法读取 Gist：{e}\n请检查 wechat-qr.json 的 gistUrl")
+        return
+    link, when = parse_qr(text)
+    if not link:
+        notify("🚫 群二维码内容异常", "Gist 第一行不是 http 链接，页面会显示兜底文案")
+        return
+    if when is None:
+        notify(
+            "⏰ 群二维码缺少过期时间",
+            "Gist 第 2 行请写 ISO 时间（如 2026-10-29T00:00+08:00），"
+            "否则页面只能按 Gist 更新时间估算，并可能展示已失效的码",
+        )
+        return
+    days = (when - datetime.datetime.now(CST)).total_seconds() / 86400
+    if days <= 0:
+        notify(
+            "🚫 群二维码已过期",
+            f"过期 {abs(days):.1f} 天，页面已隐藏二维码。更新 Gist 后记得同步改第 2 行时间\n{link}",
+        )
+    elif days <= 1:
+        notify(
+            "⏰ 群二维码即将过期",
+            f"剩余 {days:.1f} 天（{when:%Y-%m-%d %H:%M}），换码后记得同步改 Gist 第 2 行",
+        )
+    else:
+        print(f"群二维码剩余 {days:.1f} 天，无需提醒")
+
+
 def dry_run():
     print("已配置平台：", "、".join(configured_platforms()) or "无")
     title, text = event_message(
@@ -262,9 +333,21 @@ if __name__ == "__main__":
             },
         )
         assert t == "⭐ star r" and "eve star 了 me/r" in c
+        assert parse_qr("https://u.wechat.com/x\n2026-10-29T00:00+08:00") == (
+            "https://u.wechat.com/x",
+            datetime.datetime(2026, 10, 29, tzinfo=CST),
+        ), "第 2 行带时区的时间"
+        assert parse_qr("# 注释\n\nhttps://u.wechat.com/x\n2026-10-29 00:00")[1] == (
+            datetime.datetime(2026, 10, 29, tzinfo=CST)
+        ), "注释/空行跳过，无时区按 +08:00"
+        assert parse_qr("https://u.wechat.com/x") == ("https://u.wechat.com/x", None)
+        assert parse_qr("not a link") == (None, None)
+        assert parse_qr("https://u.wechat.com/x\nxxx")[1] is None, "时间写错不抛异常"
         print("selftest ok")
     elif "--dry-run" in sys.argv:
         dry_run()
+    elif "--qr-check" in sys.argv:
+        qr_check()
     elif os.environ.get("EVENT_NAME") == "schedule":
         followers_notify()
     else:

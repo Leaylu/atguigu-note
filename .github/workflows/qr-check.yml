@@ -1,0 +1,21 @@
+name: 微信群二维码检查
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # UTC 01:00 = 北京 09:00，二维码 7 天过期，每天检查一次
+  workflow_dispatch:
+
+jobs:
+  qr-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: 检查二维码有效期
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          WECHAT_QR_URL: ${{ vars.WECHAT_QR_URL }} # 可选，留空则读 .vitepress/wechat-qr.json
+        run: python .github/scripts/notify.py --qr-check

@@ -23,8 +23,8 @@ function breadcrumb(pageUrl: string, crumbs: { name: string; url?: string }[]): 
 }
 
 export default defineConfig({
-  title: '尚硅谷 AI 课程笔记',
-  description: '尚硅谷 Python / LangChain / LangGraph 课程配套课件与代码整理',
+  title: 'AI 课程笔记',
+  description: 'Python / LangChain / LangGraph / AI Coding 课程配套课件与代码整理',
   lang: 'zh-CN',
 
   head: [
@@ -32,10 +32,10 @@ export default defineConfig({
     jsonLd({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: '尚硅谷 AI 课程笔记',
+      name: 'AI 课程笔记',
       url: homeUrl,
       inLanguage: 'zh-CN',
-      description: '尚硅谷 Python / LangChain / LangGraph 课程配套课件与代码整理',
+      description: 'Python / LangChain / LangGraph / AI Coding 课程配套课件与代码整理',
     }),
     [
       'script',
@@ -69,7 +69,7 @@ export default defineConfig({
     if (labels[course]) {
       head.push(
         breadcrumb(pageUrl, [
-          { name: '尚硅谷 AI 课程笔记', url: homeUrl },
+          { name: 'AI 课程笔记', url: homeUrl },
           { name: labels[course], url: homeUrl + course + '/' },
           { name: ctx.pageData.title },
         ]),
@@ -91,7 +91,7 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
-    siteTitle: '尚硅谷 AI 笔记',
+    siteTitle: 'AI 课程笔记',
 
     logo: '/atguigu-logo.png',
 
@@ -132,6 +132,7 @@ export default defineConfig({
         ],
       },
       { text: '速通 Python', link: 'https://pybridge.quarkcode.cn' },
+      { text: '微信交流群', link: '/wechat' },
     ],
 
     sidebar: {
@@ -185,8 +186,8 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
 
     footer: {
-      message: '课程版权归尚硅谷所有，本站仅供学习交流',
-      copyright: 'Copyright © 尚硅谷 · 笔记整理',
+      message: '本站仅供学习交流',
+      copyright: 'Copyright © 笔记整理',
     },
   },
 

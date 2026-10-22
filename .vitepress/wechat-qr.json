@@ -1,0 +1,5 @@
+{
+  "_note": "gistUrl 是 Gist 的 raw 地址（不带 revision，内容才可变）；fallback 是二维码过期/读取失败时的兜底文案",
+  "gistUrl": "https://gist.githubusercontent.com/xbsheng/22ef656aa24cb1a03df61bed4ec7a2b7/raw/qr.txt",
+  "fallback": "二维码已过期或暂不可用，稍后刷新本页重试；也可以直接在下方评论区留言，我会尽快更新。"
+}

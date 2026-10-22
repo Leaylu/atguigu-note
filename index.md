@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 尚硅谷 AI 课程笔记
+  name: AI 课程笔记
   text: Python / LangChain / LangGraph / AI Coding
   tagline: 课件在线阅读 · B 站视频直达 · 无需网盘会员
   actions:

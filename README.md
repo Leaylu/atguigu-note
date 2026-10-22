@@ -1,11 +1,11 @@
-# 尚硅谷 AI 课程笔记
+# AI 课程笔记
 
 [![Deploy](https://github.com/xbsheng/atguigu-note/actions/workflows/deploy.yml/badge.svg)](https://github.com/xbsheng/atguigu-note/actions/workflows/deploy.yml)
 [![GitHub Pages](https://img.shields.io/website?label=website&url=https%3A%2F%2Fxbsheng.github.io%2Fatguigu-note%2F)](https://xbsheng.github.io/atguigu-note/)
 [![Stars](https://img.shields.io/github/stars/xbsheng/atguigu-note)](https://github.com/xbsheng/atguigu-note)
 [![作者关注](https://img.shields.io/github/followers/xbsheng?label=follow)](https://github.com/xbsheng)
 
-尚硅谷 Python / LangChain / LangGraph / AI Coding 课程配套课件与代码整理
+Python / LangChain / LangGraph / AI Coding 课程配套课件与代码整理
 
 ## 在线站点
 
@@ -55,4 +55,4 @@ atguigu-note/
 
 ## 版权说明
 
-课程版权归 [尚硅谷](http://www.atguigu.com/) 所有，本仓库仅供学习交流使用。
+本仓库仅供学习交流使用
