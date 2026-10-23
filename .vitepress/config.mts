@@ -132,7 +132,7 @@ export default defineConfig({
         ],
       },
       { text: '速通 Python', link: 'https://pybridge.quarkcode.cn' },
-      { text: '微信交流群', link: '/wechat' },
+      // { text: '微信交流群', link: '/wechat' },
     ],
 
     sidebar: {
