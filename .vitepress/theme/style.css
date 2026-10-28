@@ -11,3 +11,133 @@
 .VPLocalNavOutlineDropdown .items {
   overscroll-behavior: contain;
 }
+
+/* 导航栏「新课程」标识
+ *
+ * Agent Skills 与 CMU Agents 是新增课程,在导航入口右侧挂一枚标记,
+ * 方便老访客发现新增内容。标记用伪元素实现,不改 config.mts 里的 nav 配置,
+ * 课程不再算新课时删掉本段(连同文末的窄屏内边距调整)即可。
+ *
+ * 桌面顶栏位置紧张,用 17px 的迷你「新」标(约占原 NEW 文字标一半宽度);
+ * 抽屉/手机端菜单空间充足,继续显示完整的 NEW 文字标。
+ * 选择器锚定 href 而不是文案:Agent Skills 是下拉分组(链接在弹出层内),
+ * CMU Agents 是站外直链;桌面导航栏和移动端抽屉各有一份 DOM,需成对覆盖。
+ */
+:root {
+  --atguigu-new-badge-bg: #c2410c;
+  --atguigu-new-badge-fg: #ffffff;
+}
+
+html.dark {
+  --atguigu-new-badge-bg: #fb923c;
+  --atguigu-new-badge-fg: #2a1408;
+}
+
+/* 桌面顶栏:迷你「新」标 */
+.VPNavBarMenuLink[href*="cmu-agents"] > span::after,
+.VPNavBarMenuGroup:has(a[href*="/agent_skills/"]) .text > span:not(.text-icon)::after {
+  content: "新";
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 17px;
+  height: 14px;
+  margin-left: 5px;
+  padding: 0 3px;
+  border-radius: 4px;
+  background-color: var(--atguigu-new-badge-bg);
+  color: var(--atguigu-new-badge-fg);
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 抽屉 / 手机端菜单:完整的 NEW 文字标 */
+.VPNavScreenMenuLink[href*="cmu-agents"] > span::after,
+.VPNavScreenMenuGroup:has(a[href*="/agent_skills/"]) .button-text::after {
+  content: "NEW";
+  display: inline-block;
+  box-sizing: border-box;
+  height: 14px;
+  margin-left: 6px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background-color: var(--atguigu-new-badge-bg);
+  color: var(--atguigu-new-badge-fg);
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-indent: 0.08em;
+  vertical-align: middle;
+}
+
+/* 1280 / 1366 这类窄屏笔记本上,导航已接近占满一行。
+ * 收紧条目的左右内边距(12px → 8px),给「新」标和右侧控件留出宽度,
+ * 避免主题切换 / GitHub 被挤出可视区域。 */
+@media (max-width: 1439px) {
+  .VPNavBarMenu a.VPNavBarMenuLink,
+  .VPNavBarMenu .VPNavBarMenuGroup .button {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* 平板 / 窄桌面:导航收进汉堡抽屉
+ *
+ * VitePress 默认只在 <768px 显示汉堡按钮,而本站导航有 8 个条目,
+ * 768–1200px 挤在同一行会被裁切。这里把折叠断点提前到 1200px:
+ * 桌面菜单和「更多」浮层隐藏,导航项、主题切换、GitHub 全部收进抽屉。
+ * 手机端(<768px)仍用 VitePress 自带的全屏菜单,不受下面的抽屉样式影响。
+ * 抽屉的「点遮罩关闭 / Esc 关闭」逻辑在 Layout.vue 里。
+ */
+@media (max-width: 1200px) {
+  .VPNavBar .content .VPNavBarMenu,
+  .VPNavBar .content .VPNavBarExtra {
+    display: none;
+  }
+
+  .VPNavBar .content .VPNavBarHamburger {
+    display: flex;
+  }
+
+  header.VPNav .VPNavScreen {
+    display: block;
+  }
+}
+
+/* 768–1200px 把全屏菜单改成右侧抽屉:页面压暗,面板从右侧滑出。 */
+@media (min-width: 768px) and (max-width: 1200px) {
+  header.VPNav .VPNavScreen {
+    padding: 0;
+    background-color: rgba(15, 23, 42, 0.32);
+  }
+
+  html.dark header.VPNav .VPNavScreen {
+    background-color: rgba(0, 0, 0, 0.56);
+  }
+
+  header.VPNav .VPNavScreen .container {
+    position: absolute;
+    inset: 0 0 0 auto;
+    box-sizing: border-box;
+    width: min(400px, 88vw);
+    max-width: none;
+    margin: 0;
+    padding: 32px 32px 96px;
+    background-color: var(--vp-c-bg);
+    box-shadow: -24px 0 60px rgba(16, 24, 40, 0.22);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .VPNavScreen.fade-enter-from .container {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+
+  .VPNavScreen.fade-leave-to .container {
+    transform: translateX(24px);
+  }
+}
