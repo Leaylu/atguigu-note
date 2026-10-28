@@ -1,0 +1,7 @@
+# 合并到自己的Codex配置；同名ecommerce节只保留一份。
+# 先单独启动app.mcp_http，移除旧stdio的command/args/cwd/env_vars。
+[mcp_servers.ecommerce]
+url = "http://127.0.0.1:8001/mcp"
+bearer_token_env_var = "AGENT_TOKEN"
+startup_timeout_sec = 20
+tool_timeout_sec = 30

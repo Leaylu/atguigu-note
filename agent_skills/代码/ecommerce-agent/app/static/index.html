@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>订单异常工作台</title><link rel="stylesheet" href="/ui/style.css"><script src="/ui/app.js" defer></script></head>
+<body>
+<aside class="sidebar">
+<a class="brand" href="/">序<span>ORDER DESK</span></a>
+<p class="sidebar-caption">电商业务 · 店铺 A</p>
+<nav aria-label="工作台导航">
+<button class="nav active" data-view="orders" aria-current="page"><span>01</span>异常订单</button>
+<button class="nav" data-view="workflow"><span>02</span>处理工作流</button>
+<button class="nav" data-view="tickets"><span>03</span>工单记录</button>
+<button class="nav" data-view="approval"><span>04</span>人工审批</button>
+</nav>
+<div class="sidebar-foot"><span class="dot"></span> 本地教学环境<br><a href="/docs" target="_blank" rel="noopener">查看 API 文档 ↗</a></div>
+</aside>
+<main>
+<header><div><p class="eyebrow">ECOMMERCE OPERATIONS</p><h1 id="page-title">异常订单</h1><p id="page-description">从订单事实出发，定位发货延迟。</p></div><span id="health" class="badge neutral">正在检查服务</span></header>
+<section class="connection" aria-label="Agent身份"><label for="agent-token">Agent 令牌</label><input id="agent-token" type="password" autocomplete="off" placeholder="填入 .env 中的 AGENT_TOKEN"><button id="clear-token" class="secondary">清空令牌</button><span>仅用于当前页面</span></section>
+<div id="notice" role="status" aria-live="polite" hidden></div>
+<section id="orders" class="view">
+<div class="panel query"><div class="section-head"><div><h2>查询范围</h2><p>已付款超过 24 小时，且尚未发货的订单</p></div><span class="badge neutral">固定样例日期</span></div>
+<form id="query-form" class="form-grid"><label>支付日期<input id="paid-on" type="date" value="2026-10-10" required></label><label>判断基准时间 · UTC+8<input id="as-of" type="datetime-local" value="2026-10-11T12:00" required></label><button id="query-button" type="submit">查询异常订单 <span>→</span></button></form></div>
+<div class="metrics"><div><span>匹配订单</span><strong id="order-total">—</strong><small>当前查询全部记录</small></div><div><span>判断口径</span><strong>24<span class="unit">小时</span></strong><small>严格超过发货时限</small></div><div><span>当前店铺</span><strong>A</strong><small>由服务端权限确定</small></div></div>
+<div class="panel"><div class="section-head"><div><h2>待排查清单</h2><p>点击订单查看库存和履约证据。</p></div><span id="order-count" class="muted">等待查询</span></div><div class="table-wrap"><table><thead><tr><th>订单编号</th><th>商品编码</th><th>数量</th><th>支付时间</th><th>当前状态</th><th></th></tr></thead><tbody id="order-rows"><tr><td colspan="6" class="empty">填写令牌后，查询本次异常订单。</td></tr></tbody></table></div><div class="pager"><button id="order-prev" class="secondary" disabled>上一页</button><span id="order-page">第 1 页</span><button id="order-next" class="secondary" disabled>下一页</button></div></div>
+<div id="evidence" class="panel" hidden><div class="section-head"><h2 id="evidence-title">订单证据</h2><button id="close-evidence" class="secondary">收起</button></div><div id="evidence-body"></div></div>
+</section>
+<section id="workflow" class="view" hidden>
+<div class="panel"><div class="section-head"><div><h2>创建排查流程</h2><p>使用“异常订单”页的日期与基准时间。新流程先形成报告，等待人工审批。</p></div></div><label>请求编号 · 重试时保持不变<input id="request-id" maxlength="64" pattern="[a-zA-Z0-9_-]+" placeholder="例如 order-demo-001"></label><div class="actions"><button id="start-workflow">启动排查</button><button id="new-request" class="secondary">生成新请求编号</button></div></div>
+<div class="panel"><label>工作流编号<input id="workflow-id" placeholder="粘贴已有 workflow_id，或启动后自动填入"></label><div class="actions"><button id="workflow-refresh" class="secondary">查询状态</button><button id="resume-workflow" disabled>按审批结果继续</button></div><div id="workflow-result" class="empty">尚未加载工作流。</div></div>
+</section>
+<section id="tickets" class="view" hidden><div class="panel"><div class="section-head"><div><h2>工单记录</h2><p>审批批准并恢复流程后，服务端创建处理工单。</p></div><button id="tickets-refresh">刷新工单</button></div><div class="table-wrap"><table><thead><tr><th>工单编号</th><th>订单编号</th><th>状态</th><th>工作流编号</th></tr></thead><tbody id="ticket-rows"><tr><td colspan="4" class="empty">点击刷新，读取已创建的工单。</td></tr></tbody></table></div><div class="pager"><button id="ticket-prev" class="secondary" disabled>上一页</button><span id="ticket-page">第 1 页</span><button id="ticket-next" class="secondary" disabled>下一页</button></div></div></section>
+<section id="approval" class="view" hidden><div class="panel"><div class="section-head"><div><h2>人工审批入口</h2><p>审批人先核对本次报告，再提交决定。提交决定后，仍需使用 Agent 身份恢复流程。</p></div><span class="badge amber">审批人操作</span></div><form id="approval-form"><label>工作流编号<input id="approval-id" required placeholder="填入需要审批的 workflow_id"></label><label>审批令牌<input id="approver-token" type="password" autocomplete="off" required placeholder="填入 APPROVER_TOKEN"></label><button type="submit" class="secondary">读取待审批报告</button></form><div id="approval-report" class="empty">尚未读取报告。</div><div class="actions"><button id="approve" disabled>批准创建工单</button><button id="reject" class="danger" disabled>拒绝</button></div><p class="muted">同机教学入口用于演示角色划分；企业部署应使用独立身份认证和审批入口。</p></div></section>
+<footer>订单异常排查与处理助手 <span>Python · FastAPI · LangGraph</span></footer>
+</main>
+<dialog id="decision-dialog"><h2 id="decision-title">确认审批决定</h2><p id="decision-description"></p><label>输入完整工作流编号确认<input id="decision-confirm" autocomplete="off"></label><div class="actions"><button id="decision-submit">确认提交</button><button id="decision-cancel" class="secondary">取消</button></div></dialog>
+</body></html>

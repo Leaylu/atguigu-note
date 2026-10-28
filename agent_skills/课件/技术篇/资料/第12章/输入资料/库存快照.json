@@ -1,0 +1,46 @@
+[
+  {
+    "warehouse": "华东仓",
+    "sku": "SKU001",
+    "product": "收纳箱",
+    "sales_7d": 70,
+    "available": 12,
+    "inbound": 8,
+    "lead_days": 3,
+    "safety_days": 2,
+    "pack_size": 12
+  },
+  {
+    "warehouse": "华东仓",
+    "sku": "SKU002",
+    "product": "桌面支架",
+    "sales_7d": 35,
+    "available": 40,
+    "inbound": 10,
+    "lead_days": 4,
+    "safety_days": 2,
+    "pack_size": 10
+  },
+  {
+    "warehouse": "华东仓",
+    "sku": "SKU003",
+    "product": "理线盒",
+    "sales_7d": 9,
+    "available": 0,
+    "inbound": 0,
+    "lead_days": 2,
+    "safety_days": 1,
+    "pack_size": 5
+  },
+  {
+    "warehouse": "华东仓",
+    "sku": "SKU004",
+    "product": "旅行挂钩",
+    "sales_7d": 0,
+    "available": 0,
+    "inbound": 0,
+    "lead_days": 3,
+    "safety_days": 2,
+    "pack_size": 10
+  }
+]

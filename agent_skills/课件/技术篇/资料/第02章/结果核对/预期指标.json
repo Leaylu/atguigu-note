@@ -1,0 +1,41 @@
+{
+  "raw_rows": 3260,
+  "exact_duplicate_rows": 40,
+  "unique_ticket_ids": 3200,
+  "conflict_ticket_ids": 20,
+  "conflict_version_rows": 40,
+  "usable_tickets": 3180,
+  "pending_tickets": 1325,
+  "overdue_tickets": 1108,
+  "high_priority_overdue": 383,
+  "missing_owner": 80,
+  "overdue_missing_owner": 63,
+  "by_status": {
+    "处理中": 773,
+    "已关闭": 627,
+    "已解决": 1228,
+    "待处理": 552
+  },
+  "top20_ids": [
+    "INC00668",
+    "INC02044",
+    "INC02841",
+    "INC02810",
+    "INC02639",
+    "INC01056",
+    "INC02674",
+    "INC00399",
+    "INC00597",
+    "INC01235",
+    "INC00344",
+    "INC01720",
+    "INC01359",
+    "INC01179",
+    "INC01120",
+    "INC00545",
+    "INC01633",
+    "INC01367",
+    "INC02018",
+    "INC00059"
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "CHK001",
+    "service": "商品服务",
+    "path": "/products",
+    "status_code": 200,
+    "elapsed_ms": -1
+  }
+]

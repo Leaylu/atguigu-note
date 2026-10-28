@@ -1,0 +1,722 @@
+{
+  "ORD000003": [
+    {
+      "order_id": "ORD000003",
+      "store": "华东店",
+      "sku": "SKU064",
+      "quantity": "1",
+      "order_amount_cents": "35759",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-07T13:17:00+08:00",
+      "paid_at": "2026-10-07T14:17:00+08:00"
+    },
+    {
+      "order_id": "ORD000003",
+      "store": "华东店",
+      "sku": "SKU064",
+      "quantity": "1",
+      "order_amount_cents": "36259",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-07T13:17:00+08:00",
+      "paid_at": "2026-10-07T14:17:00+08:00"
+    }
+  ],
+  "ORD000020": [
+    {
+      "order_id": "ORD000020",
+      "store": "华东店",
+      "sku": "SKU057",
+      "quantity": "4",
+      "order_amount_cents": "232872",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-10T20:28:00+08:00",
+      "paid_at": "2026-10-10T21:28:00+08:00"
+    },
+    {
+      "order_id": "ORD000020",
+      "store": "华东店",
+      "sku": "SKU057",
+      "quantity": "4",
+      "order_amount_cents": "232372",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-10T20:28:00+08:00",
+      "paid_at": "2026-10-10T21:28:00+08:00"
+    }
+  ],
+  "ORD000010": [
+    {
+      "order_id": "ORD000010",
+      "store": "华东店",
+      "sku": "SKU032",
+      "quantity": "4",
+      "order_amount_cents": "197100",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-09T00:43:00+08:00",
+      "paid_at": "2026-10-09T01:43:00+08:00"
+    },
+    {
+      "order_id": "ORD000010",
+      "store": "华东店",
+      "sku": "SKU032",
+      "quantity": "4",
+      "order_amount_cents": "196600",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-09T00:43:00+08:00",
+      "paid_at": "2026-10-09T01:43:00+08:00"
+    }
+  ],
+  "ORD000029": [
+    {
+      "order_id": "ORD000029",
+      "store": "华东店",
+      "sku": "SKU029",
+      "quantity": "5",
+      "order_amount_cents": "126920",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-03T10:09:00+08:00",
+      "paid_at": "2026-10-03T11:09:00+08:00"
+    },
+    {
+      "order_id": "ORD000029",
+      "store": "华东店",
+      "sku": "SKU029",
+      "quantity": "5",
+      "order_amount_cents": "127420",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-03T10:09:00+08:00",
+      "paid_at": "2026-10-03T11:09:00+08:00"
+    }
+  ],
+  "ORD000012": [
+    {
+      "order_id": "ORD000012",
+      "store": "华南店",
+      "sku": "SKU033",
+      "quantity": "5",
+      "order_amount_cents": "296210",
+      "status": "已取消",
+      "channel": "商城Web",
+      "created_at": "2026-10-02T11:17:00+08:00",
+      "paid_at": ""
+    },
+    {
+      "order_id": "ORD000012",
+      "store": "华南店",
+      "sku": "SKU033",
+      "quantity": "5",
+      "order_amount_cents": "296710",
+      "status": "已取消",
+      "channel": "商城Web",
+      "created_at": "2026-10-02T11:17:00+08:00",
+      "paid_at": ""
+    }
+  ],
+  "ORD000008": [
+    {
+      "order_id": "ORD000008",
+      "store": "华北店",
+      "sku": "SKU046",
+      "quantity": "5",
+      "order_amount_cents": "371900",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-09T03:29:00+08:00",
+      "paid_at": "2026-10-09T04:29:00+08:00"
+    },
+    {
+      "order_id": "ORD000008",
+      "store": "华北店",
+      "sku": "SKU046",
+      "quantity": "5",
+      "order_amount_cents": "371400",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-09T03:29:00+08:00",
+      "paid_at": "2026-10-09T04:29:00+08:00"
+    }
+  ],
+  "ORD000026": [
+    {
+      "order_id": "ORD000026",
+      "store": "华东店",
+      "sku": "SKU023",
+      "quantity": "5",
+      "order_amount_cents": "326310",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-11T05:39:00+08:00",
+      "paid_at": "2026-10-11T06:39:00+08:00"
+    },
+    {
+      "order_id": "ORD000026",
+      "store": "华东店",
+      "sku": "SKU023",
+      "quantity": "5",
+      "order_amount_cents": "326810",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-11T05:39:00+08:00",
+      "paid_at": "2026-10-11T06:39:00+08:00"
+    }
+  ],
+  "ORD000025": [
+    {
+      "order_id": "ORD000025",
+      "store": "华东店",
+      "sku": "SKU067",
+      "quantity": "1",
+      "order_amount_cents": "8913",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-02T13:43:00+08:00",
+      "paid_at": "2026-10-02T14:43:00+08:00"
+    },
+    {
+      "order_id": "ORD000025",
+      "store": "华东店",
+      "sku": "SKU067",
+      "quantity": "1",
+      "order_amount_cents": "8413",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-02T13:43:00+08:00",
+      "paid_at": "2026-10-02T14:43:00+08:00"
+    }
+  ],
+  "ORD000009": [
+    {
+      "order_id": "ORD000009",
+      "store": "华北店",
+      "sku": "SKU024",
+      "quantity": "4",
+      "order_amount_cents": "19464",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-03T05:44:00+08:00",
+      "paid_at": "2026-10-03T06:44:00+08:00"
+    },
+    {
+      "order_id": "ORD000009",
+      "store": "华北店",
+      "sku": "SKU024",
+      "quantity": "4",
+      "order_amount_cents": "18964",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-03T05:44:00+08:00",
+      "paid_at": "2026-10-03T06:44:00+08:00"
+    }
+  ],
+  "ORD000024": [
+    {
+      "order_id": "ORD000024",
+      "store": "华南店",
+      "sku": "SKU011",
+      "quantity": "4",
+      "order_amount_cents": "149196",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-03T07:24:00+08:00",
+      "paid_at": "2026-10-03T08:24:00+08:00"
+    },
+    {
+      "order_id": "ORD000024",
+      "store": "华南店",
+      "sku": "SKU011",
+      "quantity": "4",
+      "order_amount_cents": "149696",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-03T07:24:00+08:00",
+      "paid_at": "2026-10-03T08:24:00+08:00"
+    }
+  ],
+  "ORD000016": [
+    {
+      "order_id": "ORD000016",
+      "store": "华东店",
+      "sku": "SKU059",
+      "quantity": "2",
+      "order_amount_cents": "81662",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-03T18:48:00+08:00",
+      "paid_at": "2026-10-03T19:48:00+08:00"
+    },
+    {
+      "order_id": "ORD000016",
+      "store": "华东店",
+      "sku": "SKU059",
+      "quantity": "2",
+      "order_amount_cents": "81162",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-03T18:48:00+08:00",
+      "paid_at": "2026-10-03T19:48:00+08:00"
+    }
+  ],
+  "ORD000001": [
+    {
+      "order_id": "ORD000001",
+      "store": "华南店",
+      "sku": "SKU027",
+      "quantity": "1",
+      "order_amount_cents": "78152",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-07T03:55:00+08:00",
+      "paid_at": "2026-10-07T04:55:00+08:00"
+    },
+    {
+      "order_id": "ORD000001",
+      "store": "华南店",
+      "sku": "SKU027",
+      "quantity": "1",
+      "order_amount_cents": "78652",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-07T03:55:00+08:00",
+      "paid_at": "2026-10-07T04:55:00+08:00"
+    }
+  ],
+  "ORD000015": [
+    {
+      "order_id": "ORD000015",
+      "store": "华东店",
+      "sku": "SKU031",
+      "quantity": "1",
+      "order_amount_cents": "51130",
+      "status": "已发货",
+      "channel": "商城App",
+      "created_at": "2026-10-03T20:13:00+08:00",
+      "paid_at": "2026-10-03T21:13:00+08:00"
+    },
+    {
+      "order_id": "ORD000015",
+      "store": "华东店",
+      "sku": "SKU031",
+      "quantity": "1",
+      "order_amount_cents": "51630",
+      "status": "已发货",
+      "channel": "商城App",
+      "created_at": "2026-10-03T20:13:00+08:00",
+      "paid_at": "2026-10-03T21:13:00+08:00"
+    }
+  ],
+  "ORD000022": [
+    {
+      "order_id": "ORD000022",
+      "store": "华南店",
+      "sku": "SKU065",
+      "quantity": "1",
+      "order_amount_cents": "12067",
+      "status": "已支付",
+      "channel": "小程序",
+      "created_at": "2026-10-12T07:50:00+08:00",
+      "paid_at": "2026-10-12T08:50:00+08:00"
+    },
+    {
+      "order_id": "ORD000022",
+      "store": "华南店",
+      "sku": "SKU065",
+      "quantity": "1",
+      "order_amount_cents": "11567",
+      "status": "已支付",
+      "channel": "小程序",
+      "created_at": "2026-10-12T07:50:00+08:00",
+      "paid_at": "2026-10-12T08:50:00+08:00"
+    }
+  ],
+  "ORD000019": [
+    {
+      "order_id": "ORD000019",
+      "store": "华南店",
+      "sku": "SKU015",
+      "quantity": "2",
+      "order_amount_cents": "156476",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-03T04:40:00+08:00",
+      "paid_at": "2026-10-03T05:40:00+08:00"
+    },
+    {
+      "order_id": "ORD000019",
+      "store": "华南店",
+      "sku": "SKU015",
+      "quantity": "2",
+      "order_amount_cents": "156976",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-03T04:40:00+08:00",
+      "paid_at": "2026-10-03T05:40:00+08:00"
+    }
+  ],
+  "ORD000006": [
+    {
+      "order_id": "ORD000006",
+      "store": "华南店",
+      "sku": "SKU038",
+      "quantity": "2",
+      "order_amount_cents": "143938",
+      "status": "已发货",
+      "channel": "商城App",
+      "created_at": "2026-10-05T23:06:00+08:00",
+      "paid_at": "2026-10-06T00:06:00+08:00"
+    },
+    {
+      "order_id": "ORD000006",
+      "store": "华南店",
+      "sku": "SKU038",
+      "quantity": "2",
+      "order_amount_cents": "144438",
+      "status": "已发货",
+      "channel": "商城App",
+      "created_at": "2026-10-05T23:06:00+08:00",
+      "paid_at": "2026-10-06T00:06:00+08:00"
+    }
+  ],
+  "ORD000028": [
+    {
+      "order_id": "ORD000028",
+      "store": "华东店",
+      "sku": "SKU001",
+      "quantity": "4",
+      "order_amount_cents": "347820",
+      "status": "待支付",
+      "channel": "小程序",
+      "created_at": "2026-10-09T16:00:00+08:00",
+      "paid_at": ""
+    },
+    {
+      "order_id": "ORD000028",
+      "store": "华东店",
+      "sku": "SKU001",
+      "quantity": "4",
+      "order_amount_cents": "347320",
+      "status": "待支付",
+      "channel": "小程序",
+      "created_at": "2026-10-09T16:00:00+08:00",
+      "paid_at": ""
+    }
+  ],
+  "ORD000013": [
+    {
+      "order_id": "ORD000013",
+      "store": "华南店",
+      "sku": "SKU049",
+      "quantity": "1",
+      "order_amount_cents": "78115",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-07T17:34:00+08:00",
+      "paid_at": "2026-10-07T18:34:00+08:00"
+    },
+    {
+      "order_id": "ORD000013",
+      "store": "华南店",
+      "sku": "SKU049",
+      "quantity": "1",
+      "order_amount_cents": "77615",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-07T17:34:00+08:00",
+      "paid_at": "2026-10-07T18:34:00+08:00"
+    }
+  ],
+  "ORD000018": [
+    {
+      "order_id": "ORD000018",
+      "store": "华南店",
+      "sku": "SKU045",
+      "quantity": "1",
+      "order_amount_cents": "15022",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-04T07:58:00+08:00",
+      "paid_at": "2026-10-04T08:58:00+08:00"
+    },
+    {
+      "order_id": "ORD000018",
+      "store": "华南店",
+      "sku": "SKU045",
+      "quantity": "1",
+      "order_amount_cents": "14522",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-04T07:58:00+08:00",
+      "paid_at": "2026-10-04T08:58:00+08:00"
+    }
+  ],
+  "ORD000017": [
+    {
+      "order_id": "ORD000017",
+      "store": "华南店",
+      "sku": "SKU052",
+      "quantity": "5",
+      "order_amount_cents": "23585",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-10T15:45:00+08:00",
+      "paid_at": "2026-10-10T16:45:00+08:00"
+    },
+    {
+      "order_id": "ORD000017",
+      "store": "华南店",
+      "sku": "SKU052",
+      "quantity": "5",
+      "order_amount_cents": "24085",
+      "status": "已发货",
+      "channel": "商城Web",
+      "created_at": "2026-10-10T15:45:00+08:00",
+      "paid_at": "2026-10-10T16:45:00+08:00"
+    }
+  ],
+  "ORD000030": [
+    {
+      "order_id": "ORD000030",
+      "store": "华南店",
+      "sku": "SKU071",
+      "quantity": "5",
+      "order_amount_cents": "107560",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-10T04:13:00+08:00",
+      "paid_at": "2026-10-10T05:13:00+08:00"
+    },
+    {
+      "order_id": "ORD000030",
+      "store": "华南店",
+      "sku": "SKU071",
+      "quantity": "5",
+      "order_amount_cents": "108060",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-10T04:13:00+08:00",
+      "paid_at": "2026-10-10T05:13:00+08:00"
+    }
+  ],
+  "ORD000004": [
+    {
+      "order_id": "ORD000004",
+      "store": "华北店",
+      "sku": "SKU032",
+      "quantity": "3",
+      "order_amount_cents": "147950",
+      "status": "待支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-11T23:59:00+08:00",
+      "paid_at": ""
+    },
+    {
+      "order_id": "ORD000004",
+      "store": "华北店",
+      "sku": "SKU032",
+      "quantity": "3",
+      "order_amount_cents": "147450",
+      "status": "待支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-11T23:59:00+08:00",
+      "paid_at": ""
+    }
+  ],
+  "ORD000007": [
+    {
+      "order_id": "ORD000007",
+      "store": "华东店",
+      "sku": "SKU019",
+      "quantity": "2",
+      "order_amount_cents": "80444",
+      "status": "已发货",
+      "channel": "商城App",
+      "created_at": "2026-10-11T22:06:00+08:00",
+      "paid_at": "2026-10-11T23:06:00+08:00"
+    },
+    {
+      "order_id": "ORD000007",
+      "store": "华东店",
+      "sku": "SKU019",
+      "quantity": "2",
+      "order_amount_cents": "79944",
+      "status": "已发货",
+      "channel": "商城App",
+      "created_at": "2026-10-11T22:06:00+08:00",
+      "paid_at": "2026-10-11T23:06:00+08:00"
+    }
+  ],
+  "ORD000005": [
+    {
+      "order_id": "ORD000005",
+      "store": "华东店",
+      "sku": "SKU014",
+      "quantity": "4",
+      "order_amount_cents": "226412",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-07T22:05:00+08:00",
+      "paid_at": "2026-10-07T23:05:00+08:00"
+    },
+    {
+      "order_id": "ORD000005",
+      "store": "华东店",
+      "sku": "SKU014",
+      "quantity": "4",
+      "order_amount_cents": "225912",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-07T22:05:00+08:00",
+      "paid_at": "2026-10-07T23:05:00+08:00"
+    }
+  ],
+  "ORD000002": [
+    {
+      "order_id": "ORD000002",
+      "store": "华东店",
+      "sku": "SKU047",
+      "quantity": "3",
+      "order_amount_cents": "180860",
+      "status": "已取消",
+      "channel": "小程序",
+      "created_at": "2026-10-02T18:38:00+08:00",
+      "paid_at": ""
+    },
+    {
+      "order_id": "ORD000002",
+      "store": "华东店",
+      "sku": "SKU047",
+      "quantity": "3",
+      "order_amount_cents": "180360",
+      "status": "已取消",
+      "channel": "小程序",
+      "created_at": "2026-10-02T18:38:00+08:00",
+      "paid_at": ""
+    }
+  ],
+  "ORD000011": [
+    {
+      "order_id": "ORD000011",
+      "store": "华东店",
+      "sku": "SKU032",
+      "quantity": "3",
+      "order_amount_cents": "147450",
+      "status": "已发货",
+      "channel": "商城App",
+      "created_at": "2026-10-06T04:20:00+08:00",
+      "paid_at": "2026-10-06T05:20:00+08:00"
+    },
+    {
+      "order_id": "ORD000011",
+      "store": "华东店",
+      "sku": "SKU032",
+      "quantity": "3",
+      "order_amount_cents": "147950",
+      "status": "已发货",
+      "channel": "商城App",
+      "created_at": "2026-10-06T04:20:00+08:00",
+      "paid_at": "2026-10-06T05:20:00+08:00"
+    }
+  ],
+  "ORD000023": [
+    {
+      "order_id": "ORD000023",
+      "store": "华东店",
+      "sku": "SKU011",
+      "quantity": "4",
+      "order_amount_cents": "149696",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-08T06:12:00+08:00",
+      "paid_at": "2026-10-08T07:12:00+08:00"
+    },
+    {
+      "order_id": "ORD000023",
+      "store": "华东店",
+      "sku": "SKU011",
+      "quantity": "4",
+      "order_amount_cents": "149196",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-08T06:12:00+08:00",
+      "paid_at": "2026-10-08T07:12:00+08:00"
+    }
+  ],
+  "ORD000027": [
+    {
+      "order_id": "ORD000027",
+      "store": "华南店",
+      "sku": "SKU015",
+      "quantity": "4",
+      "order_amount_cents": "312952",
+      "status": "已取消",
+      "channel": "商城Web",
+      "created_at": "2026-10-08T06:31:00+08:00",
+      "paid_at": ""
+    },
+    {
+      "order_id": "ORD000027",
+      "store": "华南店",
+      "sku": "SKU015",
+      "quantity": "4",
+      "order_amount_cents": "313452",
+      "status": "已取消",
+      "channel": "商城Web",
+      "created_at": "2026-10-08T06:31:00+08:00",
+      "paid_at": ""
+    }
+  ],
+  "ORD000021": [
+    {
+      "order_id": "ORD000021",
+      "store": "华南店",
+      "sku": "SKU035",
+      "quantity": "4",
+      "order_amount_cents": "139112",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-02T22:48:00+08:00",
+      "paid_at": "2026-10-02T23:48:00+08:00"
+    },
+    {
+      "order_id": "ORD000021",
+      "store": "华南店",
+      "sku": "SKU035",
+      "quantity": "4",
+      "order_amount_cents": "138612",
+      "status": "已支付",
+      "channel": "商城Web",
+      "created_at": "2026-10-02T22:48:00+08:00",
+      "paid_at": "2026-10-02T23:48:00+08:00"
+    }
+  ],
+  "ORD000014": [
+    {
+      "order_id": "ORD000014",
+      "store": "华南店",
+      "sku": "SKU034",
+      "quantity": "3",
+      "order_amount_cents": "27101",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-10T04:28:00+08:00",
+      "paid_at": "2026-10-10T05:28:00+08:00"
+    },
+    {
+      "order_id": "ORD000014",
+      "store": "华南店",
+      "sku": "SKU034",
+      "quantity": "3",
+      "order_amount_cents": "26601",
+      "status": "已发货",
+      "channel": "小程序",
+      "created_at": "2026-10-10T04:28:00+08:00",
+      "paid_at": "2026-10-10T05:28:00+08:00"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "seed": 20261012,
+  "as_of": "2026-10-12T12:00:00+08:00",
+  "第02章": {
+    "raw_rows": 3260,
+    "exact_duplicate_rows": 40,
+    "unique_ticket_ids": 3200,
+    "conflict_ticket_ids": 20,
+    "conflict_version_rows": 40,
+    "usable_tickets": 3180,
+    "pending_tickets": 1325,
+    "overdue_tickets": 1108,
+    "high_priority_overdue": 383,
+    "missing_owner": 80,
+    "overdue_missing_owner": 63,
+    "by_status": {
+      "处理中": 773,
+      "已关闭": 627,
+      "已解决": 1228,
+      "待处理": 552
+    },
+    "top20_ids": [
+      "INC00668",
+      "INC02044",
+      "INC02841",
+      "INC02810",
+      "INC02639",
+      "INC01056",
+      "INC02674",
+      "INC00399",
+      "INC00597",
+      "INC01235",
+      "INC00344",
+      "INC01720",
+      "INC01359",
+      "INC01179",
+      "INC01120",
+      "INC00545",
+      "INC01633",
+      "INC01367",
+      "INC02018",
+      "INC00059"
+    ]
+  },
+  "第03章": {
+    "raw_order_rows": 8150,
+    "exact_duplicate_order_rows": 120,
+    "unique_order_ids": 8000,
+    "conflict_order_ids": 30,
+    "conflict_version_rows": 60,
+    "invalid_orders": 40,
+    "usable_orders": 7930,
+    "missing_channel": 100,
+    "by_status": {
+      "已发货": 3775,
+      "已取消": 648,
+      "已支付": 2577,
+      "待支付": 930
+    },
+    "paid_status_orders": 6352,
+    "paid_status_amount_cents": 837989278,
+    "payment_raw_rows": 6470,
+    "payment_exact_duplicate_rows": 60,
+    "unique_payment_rows": 6410,
+    "orphan_payment_rows": 15,
+    "excluded_order_payment_rows": 58,
+    "payment_issue_orders": 79,
+    "payment_issues": {
+      "多笔成功流水": 10,
+      "支付金额不一致": 24,
+      "未支付状态存在成功流水": 10,
+      "缺少成功流水": 35
+    },
+    "shipment_rows": 3831,
+    "orphan_shipment_rows": 20,
+    "excluded_order_shipment_rows": 36,
+    "products": 80,
+    "stock_rows": 240,
+    "overdue_unshipped": 2335,
+    "overdue_stock_insufficient": 905,
+    "by_store": {
+      "华东店": {
+        "orders": 2680,
+        "paid_orders": 2168,
+        "paid_amount_cents": 286960576
+      },
+      "华南店": {
+        "orders": 2630,
+        "paid_orders": 2096,
+        "paid_amount_cents": 278490141
+      },
+      "华北店": {
+        "orders": 2620,
+        "paid_orders": 2088,
+        "paid_amount_cents": 272538561
+      }
+    }
+  }
+}

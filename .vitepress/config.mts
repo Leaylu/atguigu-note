@@ -1,6 +1,12 @@
 import { defineConfig } from 'vitepress'
 import type { HeadConfig } from 'vitepress'
-import { langchainSidebar, langgraphSidebar, vibeSidebar, pythonSidebar } from './sidebars'
+import {
+  langchainSidebar,
+  langgraphSidebar,
+  vibeSidebar,
+  pythonSidebar,
+  agentSkillsSidebar,
+} from './sidebars'
 
 const site = 'https://xbsheng.github.io'
 const homeUrl = site + '/atguigu-note/'
@@ -24,7 +30,8 @@ function breadcrumb(pageUrl: string, crumbs: { name: string; url?: string }[]): 
 
 export default defineConfig({
   title: 'AI 课程笔记',
-  description: 'Python / LangChain / LangGraph / AI Coding 课程配套课件与代码整理',
+  description:
+    'Python / LangChain / LangGraph / AI Coding / Agent Skills 课程配套课件与代码整理',
   lang: 'zh-CN',
 
   head: [
@@ -35,7 +42,8 @@ export default defineConfig({
       name: 'AI 课程笔记',
       url: homeUrl,
       inLanguage: 'zh-CN',
-      description: 'Python / LangChain / LangGraph / AI Coding 课程配套课件与代码整理',
+      description:
+        'Python / LangChain / LangGraph / AI Coding / Agent Skills 课程配套课件与代码整理',
     }),
     [
       'script',
@@ -65,6 +73,7 @@ export default defineConfig({
       langchain: 'LangChain',
       langgraph: 'LangGraph',
       vibe_coding: 'AI Coding',
+      agent_skills: 'Agent Skills',
     }
     if (labels[course]) {
       head.push(
@@ -82,11 +91,18 @@ export default defineConfig({
   srcDir: '.',
   srcExclude: ['**/代码/**', '**/code/**', '**/.venv/**', '**/node_modules/**', '**/langgraph-runtime-viz/**'],
 
-  // 死链检查保持开启，仅忽略两类“刻意排除”导致的预期失效链接：
+  // 死链检查保持开启，仅忽略三类“刻意排除”导致的预期失效链接：
   // 1. 指向 代码/ 目录的链接：源码目录在站点构建中被 srcExclude 排除，
   //    这些链接用于 GitHub 仓库内导航（README 分章表格中的代码列）
   // 2. langgraph-runtime-viz：独立 HTML 应用，未纳入站点构建
-  ignoreDeadLinks: [/代码|%E4%BB%A3%E7%A0%81/, /langgraph-runtime-viz/],
+  // 3. agent_skills/课件/**/资料/ 与 代码/ 中的链接：指向仓库内的目录、.py/.csv/.json 与 SKILL 文件，
+  //    这些文件不参与站点构建（资料来源用，供本地和 GitHub 浏览）
+  ignoreDeadLinks: [
+    /代码|%E4%BB%A3%E7%A0%81/,
+    /langgraph-runtime-viz/,
+    /%E8%B5%84%E6%96%99|资料/,
+    /\.py$|\.csv$|\.json$|SKILL$/,
+  ],
 
   cleanUrls: true,
 
@@ -131,6 +147,16 @@ export default defineConfig({
           { text: 'B 站视频', link: 'https://www.bilibili.com/video/BV1RPET6tEp2' },
         ],
       },
+      {
+        text: 'Agent Skills',
+        items: [
+          { text: '课件目录', link: '/agent_skills/课件/00-课程大纲' },
+          { text: '技术篇', link: '/agent_skills/课件/技术篇/README' },
+          { text: '项目实战篇', link: '/agent_skills/课件/实战篇/README' },
+          { text: '视频分 P', link: '/agent_skills/README' },
+          { text: 'B 站视频', link: 'https://www.bilibili.com/video/BV14rxM6qEnL' },
+        ],
+      },
       { text: 'CMU Agents', link: 'https://xbsheng.github.io/cmu-agents/' },
       { text: '速通 Python', link: 'https://pybridge.quarkcode.cn' },
       // { text: '微信交流群', link: '/wechat' },
@@ -141,6 +167,7 @@ export default defineConfig({
       '/langchain/': langchainSidebar,
       '/langgraph/': langgraphSidebar,
       '/vibe_coding/': vibeSidebar,
+      '/agent_skills/': agentSkillsSidebar,
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/xbsheng/atguigu-note' }],

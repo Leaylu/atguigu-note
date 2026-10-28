@@ -73,6 +73,57 @@ export const vibeSidebar: DefaultTheme.SidebarItem[] = [
   },
 ]
 
+export const agentSkillsSidebar: DefaultTheme.SidebarItem[] = [
+  {
+    text: '课程概览',
+    items: [
+      { text: '课程大纲', link: '/agent_skills/课件/00-课程大纲' },
+      { text: '视频分 P 目录', link: '/agent_skills/README' },
+    ],
+  },
+  {
+    text: '技术篇',
+    items: [
+      { text: '技术篇目录', link: '/agent_skills/课件/技术篇/README' },
+      { text: '01 · Vibe Coding 与 Agent 的工作方式', link: '/agent_skills/课件/技术篇/01-Vibe-Coding与Agent的工作方式' },
+      { text: '02 · WorkBuddy 上手与任务管理', link: '/agent_skills/课件/技术篇/02-WorkBuddy上手与任务管理' },
+      { text: '03 · WorkBuddy 办公工作流实战', link: '/agent_skills/课件/技术篇/03-WorkBuddy办公工作流实战' },
+      { text: '04 · Codex 上手与双模型接入', link: '/agent_skills/课件/技术篇/04-Codex上手、双模型接入与第一个应用' },
+      { text: '05 · Codex 调试、迭代与交付', link: '/agent_skills/课件/技术篇/05-Codex调试、迭代与交付' },
+      { text: '06 · MCP 服务器介绍与接入', link: '/agent_skills/课件/技术篇/06-MCP服务器介绍与接入' },
+      { text: '07 · Skills 的含义与运行机制', link: '/agent_skills/课件/技术篇/07-Skills的含义、作用与运行机制' },
+      { text: '08 · 查找、安装与使用现有 Skills', link: '/agent_skills/课件/技术篇/08-查找、安装与使用现有Skills' },
+      { text: '09 · 从工作经验中设计 Skill', link: '/agent_skills/课件/技术篇/09-从工作经验中设计Skill' },
+      { text: '10 · 手工制作第一个 Skill', link: '/agent_skills/课件/技术篇/10-手工制作第一个Skill' },
+      { text: '11 · 用 Agent 辅助制作与改进', link: '/agent_skills/课件/技术篇/11-用Agent辅助制作与改进Skills' },
+      { text: '12 · 带资料、模板与脚本的 Skills', link: '/agent_skills/课件/技术篇/12-制作带资料、模板与脚本的Skills' },
+      { text: '13 · DeepSeek Harness 上手', link: '/agent_skills/课件/技术篇/13-DeepSeek-Harness介绍与上手' },
+      { text: '附 · 案例与资料索引', link: '/agent_skills/课件/技术篇/案例与资料索引' },
+    ],
+  },
+  {
+    text: '项目实战篇',
+    items: [
+      { text: '实战篇目录', link: '/agent_skills/课件/实战篇/README' },
+      { text: '项目实战篇大纲', link: '/agent_skills/课件/实战篇/大纲' },
+      { text: '00 · 依赖安装与项目启动', link: '/agent_skills/课件/实战篇/00-依赖安装与项目启动' },
+      { text: '01 · 项目背景与架构', link: '/agent_skills/课件/实战篇/01-项目背景与架构' },
+      { text: '02 · 认识已有电商系统', link: '/agent_skills/课件/实战篇/02-认识已有电商系统' },
+      { text: '03 · 接入已有 Python 程序', link: '/agent_skills/课件/实战篇/03-接入已有Python程序' },
+      { text: '04 · 接入 FastAPI 与 MySQL', link: '/agent_skills/课件/实战篇/04-接入FastAPI与MySQL' },
+      { text: '05 · 制作企业业务 Skills', link: '/agent_skills/课件/实战篇/05-制作企业业务Skills' },
+      { text: '06 · 接入 LangGraph 工作流', link: '/agent_skills/课件/实战篇/06-接入LangGraph工作流' },
+      { text: '07 · 完成端到端业务任务', link: '/agent_skills/课件/实战篇/07-完成端到端业务任务' },
+    ],
+  },
+  {
+    text: '相关链接',
+    items: [
+      { text: 'B 站在线观看', link: 'https://www.bilibili.com/video/BV14rxM6qEnL' },
+    ],
+  },
+]
+
 export const pythonSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: 'Python 课件',

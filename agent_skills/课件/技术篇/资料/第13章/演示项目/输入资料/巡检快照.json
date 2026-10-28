@@ -1,0 +1,58 @@
+[
+  {
+    "id": "CHK001",
+    "service": "商品服务",
+    "path": "/products",
+    "status_code": 200,
+    "elapsed_ms": 180
+  },
+  {
+    "id": "CHK002",
+    "service": "订单服务",
+    "path": "/orders",
+    "status_code": 200,
+    "elapsed_ms": 320
+  },
+  {
+    "id": "CHK003",
+    "service": "库存服务",
+    "path": "/inventory",
+    "status_code": 200,
+    "elapsed_ms": 1000
+  },
+  {
+    "id": "CHK004",
+    "service": "支付服务",
+    "path": "/payments",
+    "status_code": 503,
+    "elapsed_ms": 2200
+  },
+  {
+    "id": "CHK005",
+    "service": "搜索服务",
+    "path": "/search",
+    "status_code": 200,
+    "elapsed_ms": 1350
+  },
+  {
+    "id": "CHK006",
+    "service": "优惠券服务",
+    "path": "/coupons",
+    "status_code": 200,
+    "elapsed_ms": 90
+  },
+  {
+    "id": "CHK007",
+    "service": "物流服务",
+    "path": "/shipments",
+    "status_code": 500,
+    "elapsed_ms": 350
+  },
+  {
+    "id": "CHK008",
+    "service": "用户服务",
+    "path": "/users",
+    "status_code": 204,
+    "elapsed_ms": 120
+  }
+]

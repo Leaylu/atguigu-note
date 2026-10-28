@@ -5,7 +5,7 @@
 [![Stars](https://img.shields.io/github/stars/xbsheng/atguigu-note)](https://github.com/xbsheng/atguigu-note)
 [![作者关注](https://img.shields.io/github/followers/xbsheng?label=follow)](https://github.com/xbsheng)
 
-Python / LangChain / LangGraph / AI Coding 课程配套课件与代码整理
+Python / LangChain / LangGraph / AI Coding / Agent Skills 课程配套课件与代码整理
 
 ## 在线站点
 
@@ -26,6 +26,7 @@ pnpm docs:dev
 | [LangChain](./langchain/) | LangChain 1.2 入门到 Agent / RAG 实战         | [BV1rv7A6oEeP](https://www.bilibili.com/video/BV1rv7A6oEeP) | [README](./langchain/README.md) |
 | [LangGraph](./langgraph/) | LangGraph 入门到智能体部署实战                | [BV1z3NY66EY1](https://www.bilibili.com/video/BV1z3NY66EY1) | [README](./langgraph/README.md) |
 | [AI Coding](./vibe_coding/) | Vibe Coding 零基础实战（Claude Code / Skills / Codex） | [BV1RPET6tEp2](https://www.bilibili.com/video/BV1RPET6tEp2) | [README](./vibe_coding/README.md) |
+| [Agent Skills](./agent_skills/) | 企业级 Agent 应用与 Skills 开发实战（WorkBuddy / Codex / MCP） | [BV14rxM6qEnL](https://www.bilibili.com/video/BV14rxM6qEnL) | [README](./agent_skills/README.md) |
 
 ## 推荐项目
 
@@ -41,7 +42,8 @@ atguigu-note/
 ├── python/               # Python 课件（按章节拆分）+ 代码 + 分 P 目录
 ├── langchain/            # LangChain 课件 + 代码 + 分 P 目录
 ├── langgraph/            # LangGraph 课件 + 代码 + 分 P 目录
-└── vibe_coding/          # AI Coding（Vibe Coding）课件 + 代码 + 分 P 目录
+├── vibe_coding/          # AI Coding（Vibe Coding）课件 + 代码 + 分 P 目录
+└── agent_skills/         # 企业级 Agent 应用与 Skills 课件 + 代码 + 分 P 目录
 ```
 
 站点直接复用各课程下的 `课件/` Markdown，无需复制文件。
@@ -52,6 +54,7 @@ atguigu-note/
 2. 对照课件复习笔记
 3. 站点上的「Notebook 在线阅读」页面（LangChain / LangGraph）可直接在浏览器中打开配套 Notebook 跟练
 4. AI Coding 课程可对照 `vibe_coding/代码/AICoding/` 下的实战项目练习
+5. Agent Skills 课程按「技术篇 → 项目实战篇」顺序学习，实战代码在 `agent_skills/代码/ecommerce-agent/`
 
 ## 版权说明
 

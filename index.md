@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: AI 课程笔记
-  text: Python / LangChain / LangGraph / AI Coding
+  text: Python / LangChain / LangGraph / AI Coding / Agent Skills
   tagline: 课件在线阅读 · B 站视频直达 · 无需网盘会员
   actions:
     - theme: brand
@@ -18,6 +18,9 @@ hero:
     - theme: alt
       text: 开始学习 AI Coding
       link: /vibe_coding/课件/00-课程介绍与环境准备
+    - theme: alt
+      text: 开始学习 Agent Skills
+      link: /agent_skills/课件/00-课程大纲
 
 features:
   - title: Python 零基础
@@ -35,6 +38,10 @@ features:
   - title: AI Coding（Vibe Coding）
     details: 从零开始用自然语言指挥 AI 构建真实项目，基于 Claude Code 深度实践，覆盖模型配置、Skills、项目实战与 Codex。
     link: /vibe_coding/课件/00-课程介绍与环境准备
+    linkText: 进入课件
+  - title: 企业级 Agent 与 Skills（Agent Skills）
+    details: WorkBuddy / Codex / MCP / DeepSeek Harness 上手，把工作经验做成可复用 Skill，再把 Python 程序、FastAPI 接口、MySQL 与 LangGraph 接入 Agent。
+    link: /agent_skills/课件/00-课程大纲
     linkText: 进入课件
 ---
 

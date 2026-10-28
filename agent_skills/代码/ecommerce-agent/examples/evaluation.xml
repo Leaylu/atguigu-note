@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation>
+  <qa_pair><question>对初始化数据，查询店铺A在2026-10-10支付、截至2026-10-11T12:00:00+08:00超过24小时未发货的全部订单，按编号给出清单。</question><answer>A1001, A1002, A1003</answer></qa_pair>
+  <qa_pair><question>同一查询以limit=2读取第一页，下一页offset是多少？</question><answer>2</answer></qa_pair>
+  <qa_pair><question>同一查询从offset=2、limit=2读取，最后一页包含哪个订单？</question><answer>A1003</answer></qa_pair>
+  <qa_pair><question>读取A1001证据：购买数量与当前可用库存分别是多少？</question><answer>2, 0</answer></qa_pair>
+  <qa_pair><question>读取A1002证据，其履约事件代码是什么？</question><answer>warehouse_hold</answer></qa_pair>
+  <qa_pair><question>读取A1002证据，履约备注的具体内容是什么？</question><answer>地址核验未通过，仓库暂缓出库</answer></qa_pair>
+  <qa_pair><question>读取A1003证据，是否存在履约摘要？</question><answer>不存在</answer></qa_pair>
+  <qa_pair><question>对初始化数据，将判断基准改成2026-10-11T08:00:00+08:00，支付日期仍为2026-10-10，严格超过24小时的店铺A订单有多少？</question><answer>0</answer></qa_pair>
+  <qa_pair><question>用当前Agent身份读取B1001证据，是否能得到该订单内容？</question><answer>不能，HTTP 404</answer></qa_pair>
+  <qa_pair><question>用订单校验工具校验[{"id":"X","status":"paid","quantity":true,"paid_at":"2026-10-10T08:00:00+08:00"}]，valid是什么？</question><answer>false</answer></qa_pair>
+</evaluation>

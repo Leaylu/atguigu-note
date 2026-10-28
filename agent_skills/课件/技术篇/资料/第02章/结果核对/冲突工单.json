@@ -1,0 +1,522 @@
+{
+  "INC00006": [
+    {
+      "ticket_id": "INC00006",
+      "store": "华南店",
+      "system": "支付网关",
+      "priority": "P2",
+      "status": "待处理",
+      "created_at": "2026-10-09T08:13:00+08:00",
+      "updated_at": "2026-10-09T08:43:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD004664",
+      "summary": "导出字段缺失"
+    },
+    {
+      "ticket_id": "INC00006",
+      "store": "华南店",
+      "system": "支付网关",
+      "priority": "P2",
+      "status": "待处理",
+      "created_at": "2026-10-09T08:13:00+08:00",
+      "updated_at": "2026-10-09T08:43:00+08:00",
+      "owner": "陈工",
+      "order_id": "ORD004664",
+      "summary": "导出字段缺失"
+    }
+  ],
+  "INC00004": [
+    {
+      "ticket_id": "INC00004",
+      "store": "华北店",
+      "system": "履约接口",
+      "priority": "P3",
+      "status": "处理中",
+      "created_at": "2026-10-06T07:15:00+08:00",
+      "updated_at": "2026-10-06T07:45:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD002385",
+      "summary": "履约同步需核查"
+    },
+    {
+      "ticket_id": "INC00004",
+      "store": "华北店",
+      "system": "履约接口",
+      "priority": "P3",
+      "status": "处理中",
+      "created_at": "2026-10-06T07:15:00+08:00",
+      "updated_at": "2026-10-06T07:45:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD002385",
+      "summary": "履约同步需核查"
+    }
+  ],
+  "INC00010": [
+    {
+      "ticket_id": "INC00010",
+      "store": "华东店",
+      "system": "履约接口",
+      "priority": "P3",
+      "status": "已关闭",
+      "created_at": "2026-10-06T00:55:00+08:00",
+      "updated_at": "2026-10-06T01:25:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD004179",
+      "summary": "履约同步需核查"
+    },
+    {
+      "ticket_id": "INC00010",
+      "store": "华东店",
+      "system": "履约接口",
+      "priority": "P3",
+      "status": "已关闭",
+      "created_at": "2026-10-06T00:55:00+08:00",
+      "updated_at": "2026-10-06T01:25:00+08:00",
+      "owner": "赵工",
+      "order_id": "ORD004179",
+      "summary": "履约同步需核查"
+    }
+  ],
+  "INC00007": [
+    {
+      "ticket_id": "INC00007",
+      "store": "华东店",
+      "system": "商品中心",
+      "priority": "P3",
+      "status": "已解决",
+      "created_at": "2026-10-11T15:42:00+08:00",
+      "updated_at": "2026-10-11T16:12:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD004262",
+      "summary": "商品接口响应慢"
+    },
+    {
+      "ticket_id": "INC00007",
+      "store": "华东店",
+      "system": "商品中心",
+      "priority": "P3",
+      "status": "已解决",
+      "created_at": "2026-10-11T15:42:00+08:00",
+      "updated_at": "2026-10-11T16:12:00+08:00",
+      "owner": "吴工",
+      "order_id": "ORD004262",
+      "summary": "商品接口响应慢"
+    }
+  ],
+  "INC00013": [
+    {
+      "ticket_id": "INC00013",
+      "store": "华东店",
+      "system": "订单中心",
+      "priority": "P1",
+      "status": "已解决",
+      "created_at": "2026-10-11T05:09:00+08:00",
+      "updated_at": "2026-10-11T05:39:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD001118",
+      "summary": "支付状态更新滞后"
+    },
+    {
+      "ticket_id": "INC00013",
+      "store": "华东店",
+      "system": "订单中心",
+      "priority": "P1",
+      "status": "已解决",
+      "created_at": "2026-10-11T05:09:00+08:00",
+      "updated_at": "2026-10-11T05:39:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD001118",
+      "summary": "支付状态更新滞后"
+    }
+  ],
+  "INC00001": [
+    {
+      "ticket_id": "INC00001",
+      "store": "华北店",
+      "system": "商品中心",
+      "priority": "P3",
+      "status": "已解决",
+      "created_at": "2026-10-12T10:58:00+08:00",
+      "updated_at": "2026-10-12T11:28:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD007720",
+      "summary": "商品接口响应慢"
+    },
+    {
+      "ticket_id": "INC00001",
+      "store": "华北店",
+      "system": "商品中心",
+      "priority": "P3",
+      "status": "已解决",
+      "created_at": "2026-10-12T10:58:00+08:00",
+      "updated_at": "2026-10-12T11:28:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD007720",
+      "summary": "商品接口响应慢"
+    }
+  ],
+  "INC00015": [
+    {
+      "ticket_id": "INC00015",
+      "store": "华北店",
+      "system": "支付网关",
+      "priority": "P2",
+      "status": "已解决",
+      "created_at": "2026-10-09T03:49:00+08:00",
+      "updated_at": "2026-10-09T04:19:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD003495",
+      "summary": "导出字段缺失"
+    },
+    {
+      "ticket_id": "INC00015",
+      "store": "华北店",
+      "system": "支付网关",
+      "priority": "P2",
+      "status": "已解决",
+      "created_at": "2026-10-09T03:49:00+08:00",
+      "updated_at": "2026-10-09T04:19:00+08:00",
+      "owner": "赵工",
+      "order_id": "ORD003495",
+      "summary": "导出字段缺失"
+    }
+  ],
+  "INC00011": [
+    {
+      "ticket_id": "INC00011",
+      "store": "华南店",
+      "system": "支付网关",
+      "priority": "P2",
+      "status": "处理中",
+      "created_at": "2026-10-10T16:46:00+08:00",
+      "updated_at": "2026-10-10T17:16:00+08:00",
+      "owner": "吴工",
+      "order_id": "ORD003717",
+      "summary": "导出字段缺失"
+    },
+    {
+      "ticket_id": "INC00011",
+      "store": "华南店",
+      "system": "支付网关",
+      "priority": "P2",
+      "status": "处理中",
+      "created_at": "2026-10-10T16:46:00+08:00",
+      "updated_at": "2026-10-10T17:16:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD003717",
+      "summary": "导出字段缺失"
+    }
+  ],
+  "INC00014": [
+    {
+      "ticket_id": "INC00014",
+      "store": "华南店",
+      "system": "支付网关",
+      "priority": "P4",
+      "status": "已解决",
+      "created_at": "2026-10-08T02:03:00+08:00",
+      "updated_at": "2026-10-08T02:33:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD007503",
+      "summary": "导出字段缺失"
+    },
+    {
+      "ticket_id": "INC00014",
+      "store": "华南店",
+      "system": "支付网关",
+      "priority": "P4",
+      "status": "已解决",
+      "created_at": "2026-10-08T02:03:00+08:00",
+      "updated_at": "2026-10-08T02:33:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD007503",
+      "summary": "导出字段缺失"
+    }
+  ],
+  "INC00002": [
+    {
+      "ticket_id": "INC00002",
+      "store": "华东店",
+      "system": "商品中心",
+      "priority": "P2",
+      "status": "待处理",
+      "created_at": "2026-10-10T00:25:00+08:00",
+      "updated_at": "2026-10-10T00:55:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD004976",
+      "summary": "商品接口响应慢"
+    },
+    {
+      "ticket_id": "INC00002",
+      "store": "华东店",
+      "system": "商品中心",
+      "priority": "P2",
+      "status": "待处理",
+      "created_at": "2026-10-10T00:25:00+08:00",
+      "updated_at": "2026-10-10T00:55:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD004976",
+      "summary": "商品接口响应慢"
+    }
+  ],
+  "INC00005": [
+    {
+      "ticket_id": "INC00005",
+      "store": "华北店",
+      "system": "履约接口",
+      "priority": "P3",
+      "status": "待处理",
+      "created_at": "2026-10-08T06:07:00+08:00",
+      "updated_at": "2026-10-08T06:37:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD000589",
+      "summary": "履约同步需核查"
+    },
+    {
+      "ticket_id": "INC00005",
+      "store": "华北店",
+      "system": "履约接口",
+      "priority": "P3",
+      "status": "待处理",
+      "created_at": "2026-10-08T06:07:00+08:00",
+      "updated_at": "2026-10-08T06:37:00+08:00",
+      "owner": "陈工",
+      "order_id": "ORD000589",
+      "summary": "履约同步需核查"
+    }
+  ],
+  "INC00020": [
+    {
+      "ticket_id": "INC00020",
+      "store": "华北店",
+      "system": "订单中心",
+      "priority": "P3",
+      "status": "已关闭",
+      "created_at": "2026-10-07T11:59:00+08:00",
+      "updated_at": "2026-10-07T12:29:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD000684",
+      "summary": "支付状态更新滞后"
+    },
+    {
+      "ticket_id": "INC00020",
+      "store": "华北店",
+      "system": "订单中心",
+      "priority": "P3",
+      "status": "已关闭",
+      "created_at": "2026-10-07T11:59:00+08:00",
+      "updated_at": "2026-10-07T12:29:00+08:00",
+      "owner": "吴工",
+      "order_id": "ORD000684",
+      "summary": "支付状态更新滞后"
+    }
+  ],
+  "INC00019": [
+    {
+      "ticket_id": "INC00019",
+      "store": "华北店",
+      "system": "支付网关",
+      "priority": "P3",
+      "status": "处理中",
+      "created_at": "2026-10-12T01:39:00+08:00",
+      "updated_at": "2026-10-12T02:09:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD007412",
+      "summary": "导出字段缺失"
+    },
+    {
+      "ticket_id": "INC00019",
+      "store": "华北店",
+      "system": "支付网关",
+      "priority": "P3",
+      "status": "处理中",
+      "created_at": "2026-10-12T01:39:00+08:00",
+      "updated_at": "2026-10-12T02:09:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD007412",
+      "summary": "导出字段缺失"
+    }
+  ],
+  "INC00017": [
+    {
+      "ticket_id": "INC00017",
+      "store": "华北店",
+      "system": "履约接口",
+      "priority": "P2",
+      "status": "待处理",
+      "created_at": "2026-10-10T05:09:00+08:00",
+      "updated_at": "2026-10-10T05:39:00+08:00",
+      "owner": "赵工",
+      "order_id": "ORD006316",
+      "summary": "履约同步需核查"
+    },
+    {
+      "ticket_id": "INC00017",
+      "store": "华北店",
+      "system": "履约接口",
+      "priority": "P2",
+      "status": "待处理",
+      "created_at": "2026-10-10T05:09:00+08:00",
+      "updated_at": "2026-10-10T05:39:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD006316",
+      "summary": "履约同步需核查"
+    }
+  ],
+  "INC00018": [
+    {
+      "ticket_id": "INC00018",
+      "store": "华南店",
+      "system": "履约接口",
+      "priority": "P3",
+      "status": "处理中",
+      "created_at": "2026-10-06T08:13:00+08:00",
+      "updated_at": "2026-10-06T08:43:00+08:00",
+      "owner": "吴工",
+      "order_id": "ORD005509",
+      "summary": "履约同步需核查"
+    },
+    {
+      "ticket_id": "INC00018",
+      "store": "华南店",
+      "system": "履约接口",
+      "priority": "P3",
+      "status": "处理中",
+      "created_at": "2026-10-06T08:13:00+08:00",
+      "updated_at": "2026-10-06T08:43:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD005509",
+      "summary": "履约同步需核查"
+    }
+  ],
+  "INC00016": [
+    {
+      "ticket_id": "INC00016",
+      "store": "华南店",
+      "system": "商品中心",
+      "priority": "P2",
+      "status": "已关闭",
+      "created_at": "2026-10-07T16:51:00+08:00",
+      "updated_at": "2026-10-07T17:21:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD000797",
+      "summary": "商品接口响应慢"
+    },
+    {
+      "ticket_id": "INC00016",
+      "store": "华南店",
+      "system": "商品中心",
+      "priority": "P2",
+      "status": "已关闭",
+      "created_at": "2026-10-07T16:51:00+08:00",
+      "updated_at": "2026-10-07T17:21:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD000797",
+      "summary": "商品接口响应慢"
+    }
+  ],
+  "INC00003": [
+    {
+      "ticket_id": "INC00003",
+      "store": "华东店",
+      "system": "商品中心",
+      "priority": "P3",
+      "status": "已解决",
+      "created_at": "2026-10-07T19:53:00+08:00",
+      "updated_at": "2026-10-07T20:23:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD007187",
+      "summary": "商品接口响应慢"
+    },
+    {
+      "ticket_id": "INC00003",
+      "store": "华东店",
+      "system": "商品中心",
+      "priority": "P3",
+      "status": "已解决",
+      "created_at": "2026-10-07T19:53:00+08:00",
+      "updated_at": "2026-10-07T20:23:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD007187",
+      "summary": "商品接口响应慢"
+    }
+  ],
+  "INC00012": [
+    {
+      "ticket_id": "INC00012",
+      "store": "华东店",
+      "system": "履约接口",
+      "priority": "P2",
+      "status": "已关闭",
+      "created_at": "2026-10-10T19:46:00+08:00",
+      "updated_at": "2026-10-10T20:16:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD004746",
+      "summary": "履约同步需核查"
+    },
+    {
+      "ticket_id": "INC00012",
+      "store": "华东店",
+      "system": "履约接口",
+      "priority": "P2",
+      "status": "已关闭",
+      "created_at": "2026-10-10T19:46:00+08:00",
+      "updated_at": "2026-10-10T20:16:00+08:00",
+      "owner": "吴工",
+      "order_id": "ORD004746",
+      "summary": "履约同步需核查"
+    }
+  ],
+  "INC00008": [
+    {
+      "ticket_id": "INC00008",
+      "store": "华东店",
+      "system": "库存服务",
+      "priority": "P4",
+      "status": "已解决",
+      "created_at": "2026-10-11T14:46:00+08:00",
+      "updated_at": "2026-10-11T15:16:00+08:00",
+      "owner": "林工",
+      "order_id": "ORD000872",
+      "summary": "库存查询超时"
+    },
+    {
+      "ticket_id": "INC00008",
+      "store": "华东店",
+      "system": "库存服务",
+      "priority": "P4",
+      "status": "已解决",
+      "created_at": "2026-10-11T14:46:00+08:00",
+      "updated_at": "2026-10-11T15:16:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD000872",
+      "summary": "库存查询超时"
+    }
+  ],
+  "INC00009": [
+    {
+      "ticket_id": "INC00009",
+      "store": "华南店",
+      "system": "库存服务",
+      "priority": "P3",
+      "status": "已解决",
+      "created_at": "2026-10-07T08:49:00+08:00",
+      "updated_at": "2026-10-07T09:19:00+08:00",
+      "owner": "周工",
+      "order_id": "ORD005933",
+      "summary": "库存查询超时"
+    },
+    {
+      "ticket_id": "INC00009",
+      "store": "华南店",
+      "system": "库存服务",
+      "priority": "P3",
+      "status": "已解决",
+      "created_at": "2026-10-07T08:49:00+08:00",
+      "updated_at": "2026-10-07T09:19:00+08:00",
+      "owner": "待核验人员",
+      "order_id": "ORD005933",
+      "summary": "库存查询超时"
+    }
+  ]
+}

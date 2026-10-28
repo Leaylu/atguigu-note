@@ -1,0 +1,13 @@
+[
+  {
+    "warehouse": "华东仓",
+    "sku": "SKU001",
+    "product": "收纳箱",
+    "sales_7d": 70,
+    "available": 12,
+    "inbound": 8,
+    "lead_days": 3,
+    "safety_days": 2,
+    "pack_size": 0
+  }
+]
